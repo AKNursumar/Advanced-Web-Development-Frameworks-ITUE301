@@ -1,0 +1,27 @@
+{
+  "name": "practical-05-mongodb-mongoose",
+  "version": "1.0.0",
+  "description": "MongoDB Integration and Schema Design with Mongoose (Practical 5)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "jest --runInBand --detectOpenHandles --forceExit"
+  },
+  "keywords": ["express", "mongodb", "mongoose", "rest-api", "awdf"],
+  "author": "Abdulkadir Nursumar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 15000
+  }
+}

@@ -1,0 +1,7 @@
+# Root .gitignore for Practical 13
+node_modules/
+.env
+dist/
+.DS_Store
+*.log
+coverage/

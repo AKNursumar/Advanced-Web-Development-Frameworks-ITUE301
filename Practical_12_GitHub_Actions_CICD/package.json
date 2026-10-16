@@ -1,0 +1,38 @@
+{
+  "name": "practical-12-github-actions-cicd",
+  "version": "1.0.0",
+  "description": "Practical 12: Automated CI/CD Pipeline with GitHub Actions and Integration Testing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "jest --runInBand --detectOpenHandles --forceExit",
+    "lint": "node scripts/lint_check.js",
+    "ci:simulate": "node scripts/simulate_ci.js"
+  },
+  "keywords": [
+    "github-actions",
+    "ci-cd",
+    "automation",
+    "jest",
+    "supertest",
+    "express",
+    "mongodb"
+  ],
+  "author": "Abdulkadir Nursumar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 10000
+  }
+}

@@ -1,0 +1,42 @@
+const mongoose = require('mongoose');
+
+const taskSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: [true, 'Task title is required'],
+      trim: true,
+      minlength: [3, 'Task title must be at least 3 characters long']
+    },
+    description: {
+      type: String,
+      trim: true,
+      default: ''
+    },
+    completed: {
+      type: Boolean,
+      default: false
+    },
+    priority: {
+      type: String,
+      enum: {
+        values: ['low', 'medium', 'high'],
+        message: 'Priority must be low, medium, or high'
+      },
+      default: 'medium'
+    },
+    isAiGenerated: {
+      type: Boolean,
+      default: false
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now
+    }
+  },
+  {
+    versionKey: false
+  }
+);
+
+module.exports = mongoose.model('Task', taskSchema);

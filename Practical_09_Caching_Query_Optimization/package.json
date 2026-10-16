@@ -1,0 +1,29 @@
+{
+  "name": "practical-09-caching-query-optimization",
+  "version": "1.0.0",
+  "description": "In-Memory Caching and Query Optimization with node-cache (Practical 9)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "jest --runInBand --detectOpenHandles --forceExit",
+    "benchmark": "node scripts/benchmark.js"
+  },
+  "keywords": ["express", "node-cache", "caching", "performance", "mongodb"],
+  "author": "Abdulkadir Nursumar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.3",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 15000
+  }
+}

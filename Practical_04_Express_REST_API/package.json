@@ -1,0 +1,25 @@
+{
+  "name": "practical-04-express-rest-api",
+  "version": "1.0.0",
+  "description": "Task Management RESTful API with Node.js and Express (Practical 4)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "jest --runInBand --detectOpenHandles"
+  },
+  "keywords": ["express", "rest-api", "awdf", "node"],
+  "author": "Abdulkadir Nursumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

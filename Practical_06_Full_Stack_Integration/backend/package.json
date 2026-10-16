@@ -1,0 +1,19 @@
+{
+  "name": "practical-06-backend",
+  "version": "1.0.0",
+  "description": "Full-Stack Task Management Backend (Practical 6)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "keywords": ["express", "mongodb", "mongoose", "cors", "fullstack"],
+  "author": "Abdulkadir Nursumar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.3"
+  }
+}
